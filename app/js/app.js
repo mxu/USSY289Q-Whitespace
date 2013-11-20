@@ -9,6 +9,16 @@ var app = angular.module("app", ["firebase"]).config(function($routeProvider) {
 		controller: 'EndController'
 	});
 
+	$routeProvider.when('/analysis', {
+		templateUrl: 'templates/analysis.html',
+		controller: 'AnalysisController'
+	});
+
+	$routeProvider.when('/gen', {
+		templateUrl: 'templates/gen.html',
+		controller: 'GenController'
+	});
+
 	$routeProvider.otherwise({
 		redirectTo : '/home',
 		templateUrl: 'templates/home.html'
@@ -125,6 +135,56 @@ var TestController = function($scope, $timeout, $location) {
 	}
 
 	$scope.nextPassage();
+}
+
+var AnalysisController = function($scope) {
+	window.$a = $scope;
+
+	$scope.data = {
+		"Line Height" : [],
+		"Word Spacing" : [],
+		"Section Spacing" : [],
+		"Side Margins": []
+	}
+
+	var raw = null;
+	var uRef = new Firebase('https://ussy289q.firebaseio.com/userData');
+	uRef.once('value', function(snap) {
+		raw = snap.val();
+		for(u in raw) {
+			var results = raw[u].results;
+			for(r in results) {
+				$scope.data[results[r].metric].push({
+					'x': results[r].value, 
+					'y1': results[r].time,
+					'y2': results[r].score
+				});
+			}
+		}
+		$scope.$apply();
+	});
+}
+
+var GenController = function($scope) {
+	window.$g = $scope;
+
+	$scope.getResult = function() {
+		var results = [];
+		for(i in $scope.$parent.metrics) {
+			var metric = $scope.$parent.metrics[i];
+			results[i] = {
+				'metric': metric.name,
+				'score': Math.round(Math.random() * 6),
+				'maxScore': 7,
+				'time': Math.round(100000 + 500000 * Math.random()),
+				'value': Math.round(metric.min + (metric.max - metric.min) * Math.random())
+			}
+		}
+		var resultRef = new Firebase('https://ussy289q.firebaseio.com/userData').push();
+		resultRef.set({
+			'results': results
+		});
+	}
 }
 
 var EndController = function($scope, $location) {

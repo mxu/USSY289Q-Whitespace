@@ -1,0 +1,19 @@
+<div class="panel panel-default" ng-repeat="(metric, d) in data">
+	<div class="panel-heading">
+		<h3 class="panel-title">{{metric}}</h3>
+	</div>
+	<div class="panel-body">
+		<table class="table table-striped">
+			<tr>
+				<td><strong>Value<strong></td>
+				<td><strong>Time</strong></td>
+				<td><strong>Score</strong></td>
+			</tr>
+			<tr ng-repeat="var in d">
+				<td>{{var.x}}px</td>
+				<td>{{var.y1/1000}}s</td>
+				<td>{{var.y2}}/7</td>
+			</tr>
+		</table>
+	</div>
+</div>
