@@ -1,5 +1,18 @@
 <div class="row">
 	<div class="col-md-6 col-md-offset-3">
-		<p class="center-text"><h1>Results</h1></p>
+		<h1>Thank you for your participation</h1>
+		<h3>Here are your results:</h3>
+		<div class="panel panel-default" ng-repeat="test in $parent.results">
+			<div class="panel-heading">
+				<h4>Test #{{$index + 1}}</h4>
+			</div>
+			<div class="panel-body">
+				Metric: {{test.metric}} ({{test.value}}px)
+				<br>
+				Reading time: {{test.time / 1000}}s
+				<br>
+				Correct Answers: {{test.score}}/{{test.maxScore}}
+			</div>
+		</div>
 	</div>
 </div>

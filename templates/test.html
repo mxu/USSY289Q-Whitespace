@@ -25,9 +25,11 @@
 		</div>
 		<div id="questionPanel" class="panel panel-default" ng-show="question">
 			<div class="panel-heading">
-				Question: {{question.question}}
+				<h3><span class="label label-danger">{{counter}}</span> <small>seconds remaining for this question</small></h3>
 			</div>
 			<div class="panel-body">
+				<strong>{{question.question}}</strong>
+				<hr>
 				<p ng-repeat="(letter, option) in question.options"><button type="button" ng-click="select(letter)" class="btn btn-danger">{{letter}}</button>     {{option}}</p>
 			</div>
 		</div>

@@ -62,6 +62,7 @@ var MainCtrl = function($scope, $location) {
 var TestController = function($scope, $timeout, $location) {
 
 	window.$t = $scope;
+	var myTimeout = null;
 
 	$scope.nextPassage = function() {
 		if ($scope.$parent.passages == undefined) {
@@ -84,25 +85,52 @@ var TestController = function($scope, $timeout, $location) {
 		}
 	}
 
+	$scope.nextQuestion = function() {
+		if($scope.passage.questions.length > 0) {
+			$scope.question = $scope.passage.questions.splice(0, 1)[0];
+			$scope.counter = 30;
+			myTimeout = $timeout($scope.onTimeout, 1000);
+		} else {
+			$scope.question = null;
+			$scope.nextPassage();
+		}
+	}
+
+	$scope.onTimeout = function() {
+		$scope.counter--;
+		if($scope.counter < 1) {
+			$scope.select(null);
+		} else {
+			myTimeout = $timeout($scope.onTimeout, 1000);
+		}
+	}
+
 	$scope.doneReading = function() {
 		$scope.timeTaken = new Date() - $scope.startTime;
-		$scope.question = $scope.passage.questions.splice(0, 1)[0];
 		$scope.$parent.results.push({
 			'time': $scope.timeTaken,
-			'answers': []
+			'metric': $scope.metric.name,
+			'value': $scope.testValue,
+			'score': 0,
+			'maxScore': $scope.passage.questions.length
 		});
+		$scope.nextQuestion();
 	}
 
 	$scope.select = function(letter) {
-		$scope.$parent.results[$scope.$parent.results.length - 1].answers.push(letter == $scope.question.answer);
-		$scope.question = $scope.passage.questions.splice(0, 1)[0];
-		if($scope.question == null)
-			$scope.nextPassage();
+		if(letter == $scope.question.answer)
+			$scope.$parent.results[$scope.$parent.results.length - 1].score++;
+		$timeout.cancel(myTimeout);
+		$scope.nextQuestion();
 	}
 
 	$scope.nextPassage();
 }
 
 var EndController = function($scope, $location) {
-	if($scope.$parent.passage == undefined || $scope.$parent.passages.length > 0) $location.path('home');
+	if($scope.$parent.results.length < 4) $location.path('home');
+	var resultRef = new Firebase('https://ussy289q.firebaseio.com/userData').push();
+	resultRef.set({
+		'results': $scope.$parent.results
+	});
 }
