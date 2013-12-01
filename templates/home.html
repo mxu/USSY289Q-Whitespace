@@ -1,12 +1,17 @@
 <div class="row">
 	<div class="col-md-6 col-md-offset-3">
-		<h2>Page Title</h2>
+		<h2>Effects of Whitespace on Reading Comprehension</h2>
+		<hr>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec neque dolor. Quisque vulputate metus id erat scelerisque, id facilisis urna tempus. Fusce fringilla rhoncus dignissim. Nam et mi tincidunt ante adipiscing posuere. Vestibulum pulvinar varius magna quis sollicitudin. Suspendisse tellus lorem, placerat ac neque eget, ultricies auctor nulla. Sed consequat sem sit amet posuere volutpat. Curabitur auctor odio ac ultricies hendrerit. Mauris in mi eget dui blandit cursus eget at elit. Quisque lobortis arcu facilisis purus suscipit consectetur. Nullam dictum mattis mauris, at dapibus magna consectetur imperdiet. Pellentesque lectus quam, lobortis non eleifend vel, convallis rutrum magna. Aliquam in aliquam felis.
+			White space is the absence of text in a space.  In this experiment we are testing the relationship between white space and readability. 
 		</p>
 		<p>
-			In feugiat facilisis ipsum in aliquet. Ut egestas metus et velit placerat, nec varius diam mattis. Vestibulum arcu ipsum, auctor sollicitudin euismod in, faucibus vitae velit. Maecenas in hendrerit erat. Sed sodales tortor urna, nec venenatis elit gravida in. Praesent dictum pharetra urna eget laoreet. Nam ac imperdiet felis, ut scelerisque mi. Nullam turpis libero, rutrum quis lacus in, molestie euismod arcu. Sed ut quam lorem. Sed vulputate aliquam lectus et tempus. In dignissim ullamcorper laoreet. Integer aliquam volutpat urna eu bibendum. Cras tempor est at urna rutrum, a aliquam nisl rhoncus. Maecenas eget dui accumsan, feugiat metus id, hendrerit odio. Praesent vitae posuere diam, quis hendrerit nulla.
-		</p>
-		<button type="button" class="btn btn-primary btn-lg btn-block" ng-click="startTests()">Begin</button>
+			You will be required to read a total of four excerpts. Take as much time as you need to comprehend each passage.  When you are finished, click "I'm done reading" to begin answering questions.  You have 45 seconds to answer each question.
+ 		</p>
+ 		<p>
+ 			When you are ready, click "Begin" to start the experiment.
+ 		</p>
+ 		<hr>
+		<button type="button" class="btn btn-primary btn-lg btn-block" ng-disabled="$parent.loadingData" ng-click="startTests()">Begin</button>
 	</div>
 </div>

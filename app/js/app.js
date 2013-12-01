@@ -1,4 +1,4 @@
-var app = angular.module("app", []).config(function($routeProvider) {
+var app = angular.module("app", ["firebase"]).config(function($routeProvider) {
 	$routeProvider.when('/test', {
 		templateUrl: 'templates/test.html',
 		controller: 'TestController'
@@ -20,8 +20,9 @@ var MainCtrl = function($scope, $location) {
 		$location.path('/test');
 	}
 
-	window.$scope = $scope;
+	window.$s = $scope;
 
+	var passageRef = new Firebase('https://ussy289q.firebaseio.com/passages');
 	$scope.metrics = [
 		{
 			'name': 'Word Spacing',
@@ -48,134 +49,29 @@ var MainCtrl = function($scope, $location) {
 			'max': 64
 		}
 	];
-
-	$scope.passages = [
-		{
-			'text': [
-				"Lorem ipsum dolor sit amet, maiestatis interpretaris ut qui, graecis vivendum cu quo. An veri iracundia vituperatoribus usu, affert suavitate qui no. Sed cu wisi omnium petentium, te eum iusto pertinax, mundi iriure intellegebat sit eu. Eum no alii tractatos. Diceret euismod argumentum te pri, primis petentium salutatus ut eos, mea diceret propriae an.",
-				"Vim eu ancillae repudiandae, graecis antiopam torquatos et duo. Eam ea quaeque iudicabit. Numquam suscipiantur interpretaris id vel, atqui aliquam bonorum cum no, possim contentiones in usu. Eos choro exerci feugait te, ad est aliquip adipisci repudiare. Cu dicant facilis nam, est ei amet repudiandae, mel aliquid periculis an.",
-				"Ea vero soluta quo. Agam viris quidam sea an. Mea nobis apeirian perfecto ea, dolor vocibus te vis, zril dolorem per in. No dicant aliquip eam. Diam vidisse per ad, vim no dicit dissentiunt. Nisl erat consetetur te nec, vis ad dicam graece.",
-				"Vel debitis denique ei, feugiat debitis invenire te his. Mei maiorum suscipiantur cu, justo eirmod eu ius. Nam id elit quas graece, ius intellegebat interpretaris eu. Dolores temporibus liberavisse an quo, no vim amet tale, est alia posse ei."
-			],
-			'questions': [
-				{
-					'text': 'What is the answer to question one?',
-					'answer': 'a',
-					'options': {
-						'a': 'Option a',
-						'b': 'Option b',
-						'c': 'Option c',
-						'd': 'Option d'
-					}
-				}, {
-					'text': 'What is the answer to question two?',
-					'answer': 'b',
-					'options': {
-						'a': 'Option a',
-						'b': 'Option b',
-						'c': 'Option c',
-						'd': 'Option d'
-					}
-				}
-			]
-		}, {
-			'text': [
-				"Lorem ipsum dolor sit amet, maiestatis interpretaris ut qui, graecis vivendum cu quo. An veri iracundia vituperatoribus usu, affert suavitate qui no. Sed cu wisi omnium petentium, te eum iusto pertinax, mundi iriure intellegebat sit eu. Eum no alii tractatos. Diceret euismod argumentum te pri, primis petentium salutatus ut eos, mea diceret propriae an.",
-				"Vim eu ancillae repudiandae, graecis antiopam torquatos et duo. Eam ea quaeque iudicabit. Numquam suscipiantur interpretaris id vel, atqui aliquam bonorum cum no, possim contentiones in usu. Eos choro exerci feugait te, ad est aliquip adipisci repudiare. Cu dicant facilis nam, est ei amet repudiandae, mel aliquid periculis an.",
-				"Ea vero soluta quo. Agam viris quidam sea an. Mea nobis apeirian perfecto ea, dolor vocibus te vis, zril dolorem per in. No dicant aliquip eam. Diam vidisse per ad, vim no dicit dissentiunt. Nisl erat consetetur te nec, vis ad dicam graece.",
-				"Vel debitis denique ei, feugiat debitis invenire te his. Mei maiorum suscipiantur cu, justo eirmod eu ius. Nam id elit quas graece, ius intellegebat interpretaris eu. Dolores temporibus liberavisse an quo, no vim amet tale, est alia posse ei."
-			],
-			'questions': [
-				{
-					'text': 'What is the answer to question one?',
-					'answer': 'a',
-					'options': {
-						'a': 'Option a',
-						'b': 'Option b',
-						'c': 'Option c',
-						'd': 'Option d'
-					}
-				}, {
-					'text': 'What is the answer to question two?',
-					'answer': 'b',
-					'options': {
-						'a': 'Option a',
-						'b': 'Option b',
-						'c': 'Option c',
-						'd': 'Option d'
-					}
-				}
-			]
-		}, {
-			'text': [
-				"Lorem ipsum dolor sit amet, maiestatis interpretaris ut qui, graecis vivendum cu quo. An veri iracundia vituperatoribus usu, affert suavitate qui no. Sed cu wisi omnium petentium, te eum iusto pertinax, mundi iriure intellegebat sit eu. Eum no alii tractatos. Diceret euismod argumentum te pri, primis petentium salutatus ut eos, mea diceret propriae an.",
-				"Vim eu ancillae repudiandae, graecis antiopam torquatos et duo. Eam ea quaeque iudicabit. Numquam suscipiantur interpretaris id vel, atqui aliquam bonorum cum no, possim contentiones in usu. Eos choro exerci feugait te, ad est aliquip adipisci repudiare. Cu dicant facilis nam, est ei amet repudiandae, mel aliquid periculis an.",
-				"Ea vero soluta quo. Agam viris quidam sea an. Mea nobis apeirian perfecto ea, dolor vocibus te vis, zril dolorem per in. No dicant aliquip eam. Diam vidisse per ad, vim no dicit dissentiunt. Nisl erat consetetur te nec, vis ad dicam graece.",
-				"Vel debitis denique ei, feugiat debitis invenire te his. Mei maiorum suscipiantur cu, justo eirmod eu ius. Nam id elit quas graece, ius intellegebat interpretaris eu. Dolores temporibus liberavisse an quo, no vim amet tale, est alia posse ei."
-			],
-			'questions': [
-				{
-					'text': 'What is the answer to question one?',
-					'answer': 'a',
-					'options': {
-						'a': 'Option a',
-						'b': 'Option b',
-						'c': 'Option c',
-						'd': 'Option d'
-					}
-				}, {
-					'text': 'What is the answer to question two?',
-					'answer': 'b',
-					'options': {
-						'a': 'Option a',
-						'b': 'Option b',
-						'c': 'Option c',
-						'd': 'Option d'
-					}
-				}
-			]
-		}, {
-			'text': [
-				"Lorem ipsum dolor sit amet, maiestatis interpretaris ut qui, graecis vivendum cu quo. An veri iracundia vituperatoribus usu, affert suavitate qui no. Sed cu wisi omnium petentium, te eum iusto pertinax, mundi iriure intellegebat sit eu. Eum no alii tractatos. Diceret euismod argumentum te pri, primis petentium salutatus ut eos, mea diceret propriae an.",
-				"Vim eu ancillae repudiandae, graecis antiopam torquatos et duo. Eam ea quaeque iudicabit. Numquam suscipiantur interpretaris id vel, atqui aliquam bonorum cum no, possim contentiones in usu. Eos choro exerci feugait te, ad est aliquip adipisci repudiare. Cu dicant facilis nam, est ei amet repudiandae, mel aliquid periculis an.",
-				"Ea vero soluta quo. Agam viris quidam sea an. Mea nobis apeirian perfecto ea, dolor vocibus te vis, zril dolorem per in. No dicant aliquip eam. Diam vidisse per ad, vim no dicit dissentiunt. Nisl erat consetetur te nec, vis ad dicam graece.",
-				"Vel debitis denique ei, feugiat debitis invenire te his. Mei maiorum suscipiantur cu, justo eirmod eu ius. Nam id elit quas graece, ius intellegebat interpretaris eu. Dolores temporibus liberavisse an quo, no vim amet tale, est alia posse ei."
-			],
-			'questions': [
-				{
-					'text': 'What is the answer to question one?',
-					'answer': 'a',
-					'options': {
-						'a': 'Option a',
-						'b': 'Option b',
-						'c': 'Option c',
-						'd': 'Option d'
-					}
-				}, {
-					'text': 'What is the answer to question two?',
-					'answer': 'b',
-					'options': {
-						'a': 'Option a',
-						'b': 'Option b',
-						'c': 'Option c',
-						'd': 'Option d'
-					}
-				}
-			]
-		}
-	];
-
 	$scope.results = [];
-
-	$scope.maxTests = $scope.passages.length;
+	$scope.maxTests = $scope.metrics.length;
+	$scope.loadingData = true;
+	passageRef.once('value', function(snap) {
+		$scope.passages = snap.val();
+		$scope.loadingData = false;
+		$scope.$apply();
+	});
 }
 
 var TestController = function($scope, $timeout, $location) {
+
+	window.$t = $scope;
+
 	$scope.nextPassage = function() {
-		$scope.startTime = new Date();
-		$scope.timeTaken = null;
+		if ($scope.$parent.passages == undefined) {
+			$location.path('home');
+			return;
+		}
 		var remaining = $scope.$parent.passages.length;
 		if (remaining > 0) {
+			$scope.startTime = new Date();
+			$scope.timeTaken = null;
 			$scope.passage = $scope.$parent.passages.splice(remaining * Math.random(), 1)[0];
 			$scope.metric = $scope.$parent.metrics.splice(remaining * Math.random(), 1)[0];
 			$scope.testValue = $scope.metric.min + Math.round(Math.random() * ($scope.metric.max - $scope.metric.min));
@@ -208,5 +104,5 @@ var TestController = function($scope, $timeout, $location) {
 }
 
 var EndController = function($scope, $location) {
-	if($scope.$parent.passages.length > 0) $location.path('home');
+	if($scope.$parent.passage == undefined || $scope.$parent.passages.length > 0) $location.path('home');
 }

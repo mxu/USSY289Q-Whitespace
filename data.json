@@ -1,36 +1,560 @@
 {
-	"passages": {
-		"1": {
-			"passage": "passage text",
-			"questions": {
-				"1": {
-					"question": "what is the answer",
-					"answer": "a",
-					"a": "this one",
-					"b": "or this one",
-					"c": "not this one"
-				},
-				"2": {
-					"question": "The author implies that the 'professional schoolmaster' (line 7) has",
-					"answer": "",
-					"a": "no interest in teaching science",
-					"b": "thwarted attempts to enliven education",
-					"c": "aided true learning",
-					"d": "supported the humanists",
-					"e": "been a pioneer in both science and humanities"
-				}		
-			}
-		}
-	},
-	"results": {
-		"asidj4aJIE": {
-			"1": {
-				"time": 453245,
-				"answers": {
-					"1": "a",
-					"2": "b"
-				}
-			}
-		}
-	}
+"passages": [
+{
+"passage": [[
+"(1) The pioneers of the teaching of science imagined that its",
+"(2) introduction into education would remove the conventionality,",
+"(3) artificiality, and backward-lookingness which were characteristic;",
+"(4) of classical studies, but they were gravely disappointed. So, too, in",
+"(5) their time had the humanists thought that the study of the classical",
+"(6) authors in the original would banish at once the dull pedantry and",
+"(7) superstition of mediaeval scholasticism. The professional",
+"(8) schoolmaster was a match for both of them, and has almost",
+"(9) managed to make the understanding of chemical reactions as dull",
+"(10) and as dogmatic an affair as the reading of Virgil's Aeneid."
+],[
+"(11) The chief claim for the use of science in education is that it",
+"(12) teaches a child something about the actual universe in which he is",
+"(13) living, in making him acquainted with the results of scientific",
+"(14) discovery, and at the same time teaches him how to think logically",
+"(15) and inductively by studying scientific method. A certain limited",
+"(16) success has been reached in the first of these aims, but practically",
+"(17) none at all in the second. Those privileged members of the",
+"(18) community who have been through a secondary or public school",
+"(19) education may be expected to know something about the",
+"(20) elementary physics and chemistry of a hundred years ago, but they",
+"(21) probably know hardly more than any bright boy can pick up from",
+"(22) an interest in wireless or scientific hobbies out of school hours.",
+"(23) As to the learning of scientific method, the whole thing is palpably",
+"(24) a farce. Actually, for the convenience of teachers and the",
+"(25) requirements of the examination system, it is necessary that the",
+"(26) pupils not only do not learn scientific method but learn precisely",
+"(27) the reverse, that is, to believe exactly what they are told and to",
+"(28) reproduce it when asked, whether it seems nonsense to them or",
+"(29) not. The way in which educated people respond to such quackeries",
+"(30) as spiritualism or astrology, not to say more dangerous ones such",
+"(31) as racial theories or currency myths, shows that fifty years of",
+"(32) education in the method of science in Britain or Germany has",
+"(33) produced no visible effect whatever. The only way of learning the",
+"(34) method of science is the long and bitter way of personal",
+"(35) experience, and, until the educational or social systems are altered",
+"(36) to make this possible, the best we can expect is the production of a",
+"(37) minority of people who are able to acquire some of the techniques",
+"(38) of science and a still smaller minority who are able to use and",
+"(39) develop them."
+],[
+"Adapted from: The Social Function of Science, John D Bernal (1939)"
+]],
+"questions": [
+{
+"question": "The author implies that the ‘profesisonal schoomaster’ (line 7) has",
+"answer": "b",
+"options": {
+"a": "no interest in teaching science",
+"b": "thwarted attempts to enliven education",
+"c": "aided true learning",
+"d": "supported the humanists",
+"e": "been a pioneer in both science and humanities"
+}
+},
+{
+"question": "The author’s attitude to secondary and public school education in the sciences is",
+"answer": "e",
+"options": {
+"a": "ambivalent",
+"b": "neutral",
+"c": "supported",
+"d": "satirical",
+"e": "contemptuous"
+}
+},
+{
+"question": "The word ‘palpably’ (line 24) most nearly means",
+"answer": "b",
+"options": {
+"a": "empirically",
+"b": "obviously",
+"c": "tentatively",
+"d": "markedly",
+"e": "ridiculously"
+}
+},
+{
+"question": "The author blames all of the following for the failure to impart scientific method through the education system except",
+"answer": "e",
+"options": {
+"a": "poor teaching",
+"b": "examination methods",
+"c": "lack of direct experience",
+"d": "the social and education systems",
+"e": "lack of interest on the part of students"
+}
+},
+{
+"question": "If the author were to study current education in science to see how things have changed since he wrote the piece, he would probably be most interested in the answer to which of the following questions?",
+"answer": "c",
+"options": {
+"a": "Do students know more about the world about them?",
+"b": "Do students spend more time in laboratories?",
+"c": "Can students apply their knowledge logically?",
+"d": "Have textbooks improved?",
+"e": "Do they respect their teachers?"
+}
+},
+{
+"question": "Astrology (line 31) is mentioned as an example of",
+"answer": "c",
+"options": {
+"a": "a science that needs to be better understood",
+"b": "a belief which no educated people hold",
+"c": "something unsupportable to those who have absorbed the methods of science",
+"d": "the gravest danger to society",
+"e": "an acknowledged failure of science"
+}
+},
+{
+"question": "All of the following can be inferred from the text except",
+"answer": "e",
+"options": {
+"a": "at the time of writing, not all children received a secondary school education",
+"b": "the author finds chemical reactions interesting",
+"c": "science teaching has imparted some knowledge of facts to some children",
+"d": "the author believes that many teachers are authoritarian",
+"e": "it is relatively easy to learn scientific method"
+}
+}
+]
+},
+{
+"passage": [[
+"(1) By the time a child is six or seven she has all the essential ",
+"(2) avoidances well enough by heart to be trusted with the care of a ",
+"(3) younger child. And she also develops a number of simple ",
+"(4) techniques. She learns to weave firm square balls from palm ",
+"(5) leaves, to make pinwheels of palm leaves or frangipani blossoms, ",
+"(6) to climb a coconut tree by walking up the trunk on flexible little ",
+"(7) feet, to break open a coconut with one firm well-directed blow of ",
+"(8) a knife as long as she is tall, to play a number of group games ",
+"(9) and sing the songs which go with them, to tidy the house by ",
+"(10) picking up the litter on the stony floor, to bring water from the ",
+"(11) sea, to spread out the copra to dry and to help gather it in when ",
+"(12) rain threatens, to go to a neighboring house and bring back a ",
+"(13) lighted faggot for the chief's pipe or the cook-house fire."
+],[
+"(14) But in the case of the little girls all these tasks are merely ",
+"(15) supplementary to the main business of baby-tending. Very small ",
+"(16) boys also have some care of the younger children, but at eight or ",
+"(17) nine years of age they are usually relieved of it. Whatever rough ",
+"(18) edges have not been smoothed off by this responsibility for ",
+"(19) younger children are worn off by their contact with older boys. ",
+"(20) For little boys are admitted to interesting and important activities ",
+"(21) only so long as their behavior is circumspect and helpful. Where ",
+"(22) small girls are brusquely pushed aside, small boys will be ",
+"(23) patiently tolerated and they become adept at making themselves ",
+"(24) useful. The four or five little boys who all wish to assist at the ",
+"(25) important, business of helping a grown youth lasso reef eels, ",
+"(26) organize themselves into a highly efficient working team; one boy ",
+"(27) holds the bait, another holds an extra lasso, others poke ",
+"(28) eagerly about in holes in the reef looking for prey, while still ",
+"(29) another tucks the captured eels into his lavalava. The small girls, ",
+"(30) burdened with heavy babies or the care of little staggerers who are ",
+"(31) too small to adventure on the reef, discouraged by the hostility ",
+"(32) of the small boys and the scorn of the older ones, have ",
+"(33) little opportunity for learning the more adventurous forms of work ",
+"(34) and play. So while the little boys first undergo the ",
+"(35) chastening effects of baby-tending and then have many ",
+"(36) opportunities to learn effective cooperation under the supervision ",
+"(37) of older boys, the girls' education is less comprehensive. They ",
+"(38) have a high standard of individual responsibility, but the ",
+"(39) community provides them with no lessons in cooperation with one ",
+"(40) another. This is particularly apparent in the activities of young ",
+"(41) people: the boys organize quickly; the girls waste hours in ",
+"(42) bickering, innocent of any technique for quick and efficient ",
+"(43) cooperation."
+],[
+"Adapted from: Coming of Age in Samoa, Margaret Mead (1928)"
+]],
+"questions": [
+{
+"question": "The primary purpose of the passage with reference to the society under discussion is to",
+"answer": "a",
+"options": {
+"a": "explain some differences in the upbringing of girls and boys",
+"b": "criticize the deficiencies in the education of girls",
+"c": "give a comprehensive account of a day in the life of an average young girl",
+"d": "delineate the role of young girls",
+"e": "show that young girls are trained to be useful to adults"
+}
+},
+{
+"question": "The word ‘brusquely’ (line 22) most nearly means",
+"answer": "d",
+"options": {
+"a": "quickly",
+"b": "gently",
+"c": "nonchalantly",
+"d": "abruptly",
+"e": "callously"
+}
+},
+{
+"question": "The list of techniques in paragraph one could best be described as",
+"answer": "d",
+"options": {
+"a": "household duties",
+"b": "rudimentary physical skills",
+"c": "important responsibilities",
+"d": "useful social skills",
+"e": "monotonous tasks"
+}
+},
+{
+"question": "It can be inferred that the ‘high standard of individual responsibility’ (line 38) is",
+"answer": "a",
+"options": {
+"a": "developed mainly thorugh child-care duties",
+"b": "only present in girls",
+"c": "taught to the girl before she is entrusted with babies",
+"d": "actually counterproductive",
+"e": "weakened as the girl grows older"
+}
+},
+{
+"question": "The expression ‘innocent of’ (line 42) is best taken to mean?",
+"answer": "b",
+"options": {
+"a": "not guilty of",
+"b": "unskilled in",
+"c": "unsuited for",
+"d": " uninvolved in",
+"e": "uninterested in"
+}
+},
+{
+"question": "It can be inferred that in the community under discussion all of the following are important except",
+"answer": "d",
+"options": {
+"a": "domestic handicrafts",
+"b": "well-defined social structure",
+"c": "fishing skills",
+"d": "formal education",
+"e": "division of labor"
+}
+},
+{
+"question": "Which of the following if true would weaken the author’s contention about ‘lessons in cooperation’ (line 39),<br> I. Group games played by younger girls involved cooperation<br> II. Girls can learn form watching boys cooperating<br> III. Indidividual girls cooperate with their mothers in looking after babies",
+"answer": "d",
+"options": {
+"a": "I only",
+"b": "II only",
+"c": "III only",
+"d": "I and II only",
+"e": "I, II and III"
+}
+}
+]
+},
+{
+"passage": [[
+"(1) Mr. Harding was not a happy man as he walked down",
+"(2) the palace pathway, and stepped out into the close. His",
+"(3) position and pleasant house were a second time",
+"(4) gone from him; but that he could endure. He had been",
+"(5) schooled and insulted by a man young enough to be",
+"(6) his son; but that he could put up with. He could even",
+"(7) draw from the very injuries which had been inflicted",
+"(8) on him some of that consolation which, we may",
+"(9) believe, martyrs always receive from the injustice of",
+"(10) their own sufferings. He had admitted to his daughter",
+"(11) that he wanted the comfort of his old home, and yet he",
+"(12) could have returned to his lodgings in the High Street,",
+"(13) if not with exultation, at least with satisfaction, had",
+"(14) that been all. But the venom of the chaplain's",
+"(15) harangue had worked into his blood, and sapped the",
+"(16) life of his sweet contentment."
+],[
+"(17) 'New men are carrying out new measures, and",
+"(18) are carting away the useless rubbish of past centuries!'",
+"(19) What cruel words these had been- and how often are",
+"(20) they now used with all the heartless cruelty of a",
+"(21) Slope! A man is sufficiently condemned if it can only",
+"(22) be shown that either in politics or religion he does not",
+"(23) belong to some new school established within the last",
+"(24) score of years. He may then regard himself as rubbish",
+"(25) and expect to be carted away. A man is nothing now",
+"(26) unless he has within him a full appreciation of the",
+"(27) new era; an era in which it would seem that neither",
+"(28) honesty nor truth is very desirable, but in which",
+"(29) success is the only touchstone of merit. We must",
+"(30) laugh at everything that is established. Let the joke be",
+"(31) ever so bad, ever so untrue to the real principles of",
+"(32) joking; nevertheless we must laugh - or else beware",
+"(33) the cart. We must talk, think, and live up to the spirit",
+"(34) of the times, or else we are nought. New men and new",
+"(35) measures, long credit and few scruples, great success",
+"(36) or wonderful ruin, such are now the tastes of",
+"(37) Englishmen who know how to live! Alas, alas! Under",
+"(38) such circumstances Mr. Harding could not but feel",
+"(39) that he was an Englishman who did not know how to",
+"(40) live. This new doctrine of Mr. Slope and the rubbish",
+"(41) cart sadly disturbed his equanimity."
+],[
+"(42) 'The same thing is going on throughout the",
+"(43) whole country!' 'Work is now required from every",
+"(44) man who receives wages!' And had he been living all",
+"(45) his life receiving wages, and doing no work? Had he",
+"(46) in truth so lived as to be now in his old age justly",
+"(47) reckoned as rubbish fit only to be hidden away in",
+"(48) some huge dust-hole? The school of men to whom he",
+"(49) professes to belong, the Grantlys, the Gwynnes, are",
+"(50) afflicted with no such self-accusations as these which",
+"(51) troubled Mr. Harding. They, as a rule, are as satisfied",
+"(52) with the wisdom and propriety of their own conduct",
+"(53) as can be any Mr. Slope, or any Bishop with his own.",
+"(54) But, unfortunately for himself, Mr. Harding had little",
+"(55) of this self-reliance. When he heard himself",
+"(56) designated as rubbish by the Slopes of the world, he",
+"(57) had no other resource than to make inquiry within his",
+"(58) own bosom as to the truth of the designation. Alas,",
+"(59) alas! the evidence seemed generally to go against him."
+],[
+"Adapted from: The Warden, Anthony Trollope (1855)"
+]],
+"questions": [
+{
+"question": "The main cause of Mr. Harding’s unhappiness as he leaves the Bisho’s Palace is",
+"answer": "d",
+"options": {
+"a": "the loss of his house",
+"b": "the loss of his position",
+"c": "the need to live with his daughter",
+"d": "the thought-provoking words of the chaplain",
+"e": "the injustice he has suffered"
+}
+},
+{
+"question": "It can be inferred that Slope is",
+"answer": "a",
+"options": {
+"a": "the chaplain",
+"b": "the Bishop",
+"c": "a foreigner",
+"d": "a politician",
+"e": "a young writer"
+}
+},
+{
+"question": "The word ‘quanimity’ (line 41) most nearly means",
+"answer": "e",
+"options": {
+"a": "status",
+"b": "happiness",
+"c": "justice",
+"d": "complacency",
+"e": "composure"
+}
+},
+{
+"question": "It can be inferred that Mr. Harding is especially disturbed because he",
+"answer": "e",
+"options": {
+"a": "does not feel himself to be old",
+"b": "is offended by the young man’s impertinence",
+"c": "believes no one else feels as he does",
+"d": "believes his life’s work has been worthwhile",
+"e": "feels there many be some truth in regarding himself as ‘rubbish’"
+}
+},
+{
+"question": "Mr. Harding differs from others of his ‘school’ (line 49) because they",
+"answer": "c",
+"options": {
+"a": "do not believe Slope",
+"b": "have never been called ‘rubbish’",
+"c": "are sure their conduct is irreproachable",
+"d": "have already examined their consciences",
+"e": "feel that Mr. Harding is not one of them"
+}
+},
+{
+"question": "The tone of the sentence ‘New men…live’ (lines 34-37) is",
+"answer": "b",
+"options": {
+"a": "objective",
+"b": "ironic",
+"c": "derogatory",
+"d": "expository",
+"e": "ambivalent"
+}
+},
+{
+"question": "The first two sentences of paragraph 3 relate the",
+"answer": "a",
+"options": {
+"a": "words of Mr. Slope",
+"b": "thoughts of Mr. Harding",
+"c": "view of the old school of men",
+"d": "viewpoint of the author",
+"e": "opinions of all young men"
+}
+}
+]
+},
+{
+"passage": [[
+"(1) A stout old lady was walking with her basket down the middle of a",
+"(2) street in Petrograd to the great confusion of the traffic and with no",
+"(3) small peril to herself. It was pointed out to her that the",
+"(4) pavement was the place for pedestrians, but she replied: 'I'm going ",
+"(5) to walk where I like. We've got liberty now.' It did not occur",
+"(6) to the dear old lady that if liberty entitled the pedestrian to",
+"(7) walk down the middle of the road, then the end of such liberty",
+"(8) would be universal chaos. Everybody would be getting in",
+"(9) everybody else's way and nobody would get anywhere. ",
+"(10) Individual liberty would have become social anarchy."
+],[
+"(11) There is a danger of the world getting liberty-drunk in",
+"(12) these days like the old lady with the basket, and it is just as well",
+"(13) to remind ourselves of what the rule of the road means. It means",
+"(14) that in order that the liberties of all may be preserved, the ",
+"(15) liberties of everybody must be curtailed. When the policeman,",
+"(16) say, at Piccadilly Circus steps into the middle of the road and",
+"(17) puts out his hand, he is the symbol not of tyranny, but of liberty.",
+"(18) You may not think so. You may, being in a hurry, and seeing",
+"(19) your car pulled up by this insolence of office, feel that your ",
+"(20) liberty has been outraged. How dare this fellow interfere with",
+"(21) your free use of the public highway? Then, if you are a",
+"(22) reasonable person, you will reflect that if he did not interfere with",
+"(23) you, he would interfere with no one, and the result would be that",
+"(24) Piccadilly Circus would be a maelstrom that you would never ",
+"(25) cross at all. You have submitted to a curtailment of private liberty",
+"(26) in order that you may enjoy a social order which makes your",
+"(27) liberty a reality."
+],[
+"(28) Liberty is not a personal affair only, but a social",
+"(29) contract. It is an accommodation of interests. In matters which do ",
+"(30) not touch anybody else's liberty, of course, I may be as free as I",
+"(31) like. If I choose to go down the road in a dressing-gown who",
+"(32) shall say me nay? You have liberty to laugh at me, but I have",
+"(33) liberty to be indifferent to you. And if I have a fancy for dyeing",
+"(34) my hair, or waxing my moustache (which heaven forbid), or ",
+"(35) wearing an overcoat and sandals, or going to bed late or getting",
+"(36) up early, I shall follow my fancy and ask no man's permission. I",
+"(37) shall not inquire of you whether I may eat mustard with my",
+"(38) mutton. And you will not ask me whether you may follow this",
+"(39) religion or that, whether you may prefer Ella Wheeler Wilcox to ",
+"(40) Wordsworth, or champagne to shandy."
+],[
+"(41) In all these and a thousand other details you and I please",
+"(42) ourselves and ask no one's leave. We have a whole kingdom in",
+"(43) which we rule alone, can do what we choose, be wise or",
+"(44) ridiculous, harsh or easy, conventional or odd. But directly we ",
+"(45) step out of that kingdom, our personal liberty of action becomes",
+"(46) qualified by other people's liberty. I might like to practice on the",
+"(47) trombone from midnight till three in the morning. If I went on to",
+"(48) the top of Everest to do it, I could please myself, but if I do it in",
+"(49) my bedroom my family will object, and if I do it out in the streets ",
+"(50) the neighbors will remind me that my liberty to blow the",
+"(51) trombone must not interfere with their liberty to sleep in quiet.",
+"(52) There are a lot of people in the world, and I have to",
+"(53) accommodate my liberty to their liberties."
+],[
+"(54) We are all liable to forget this, and unfortunately we are much ",
+"(55) more conscious of the imperfections of others in this respect than",
+"(56) of our own. A reasonable consideration for the rights or feelings",
+"(57) of others is the foundation of social conduct."
+],[
+"(58) It is in the small matters of conduct, in the observance of",
+"(59) the rule of the road, that we pass judgment upon ourselves, and ",
+"(60) declare that we are civilized or uncivilized. The great moments of",
+"(61) heroism and sacrifice are rare. It is the little habits of",
+"(62) commonplace intercourse that make up the great sum of life and",
+"(63) sweeten or make bitter the journey."
+],[
+"Adapted from an essay by George Orwell"
+]],
+"questions": [
+{
+"question": "The author might have stated his ‘rule of the road’ as",
+"answer": "c",
+"options": {
+"a": "do not walk in the middle of the road",
+"b": "follow the orders of policemen",
+"c": "do not behave inconsiderately in public",
+"d": "do what you like in public",
+"e": "liberty is more important than anarchy"
+}
+},
+{
+"question": "The author’s attitude to the old lady in paragraph one is",
+"answer": "a",
+"options": {
+"a": "conescending",
+"b": "intolerant",
+"c": "objective",
+"d": "sardonic",
+"e": "supportive"
+}
+},
+{
+"question": "The sentence ‘It means…curtailed’ (lines 13-15) is an example of",
+"answer": "d",
+"options": {
+"a": "hyperbole",
+"b": "cliché",
+"c": "simile",
+"d": "paradox",
+"e": "consonance"
+}
+},
+{
+"question": "Which sentence best sums up the author’s main point?",
+"answer": "b",
+"options": {
+"a": "There is a danger…lines 11-13",
+"b": "A reasonable…lines 58-60",
+"c": "It is in the small matters…lines 58-60",
+"d": "The great moments…lines 60-61",
+"e": "It is the little…lines 61-63"
+}
+},
+{
+"question": "A situation analogous to the ‘insolence of office’ described in paragraph 2 would be",
+"answer": "c",
+"options": {
+"a": "a teacher correcting grammar errors",
+"b": "an editor shortening the text of an article",
+"c": "a tax inspector demanding to see someone’s accounts",
+"d": "an armyoffice giving orders to a soldier",
+"e": "a gaoler looking up a prisoner"
+}
+},
+{
+"question": "‘Qualified’ (line 46) most nearly means",
+"answer": "c",
+"options": {
+"a": "accredited",
+"b": "improved",
+"c": "limited",
+"d": "stymied",
+"e": "educated"
+}
+},
+{
+"question": "The author assumes that he may be as free as he likes in",
+"answer": "b",
+"options": {
+"a": "all matters of dress and food",
+"b": "any situation which does not interefere with the liberty of others",
+"c": "anything that is not against the law",
+"d": "his own home",
+"e": "public places as long as no one sees him"
+}
+}
+]
+}
+],
+"answers":{
+"test": "abc"
+}
 }

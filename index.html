@@ -13,10 +13,6 @@
 		<div class="navbar-header">
 			<a class="navbar-brand">Research Experiment</a>
 		</div>
-		<div class="nav navbar-text progress" style="height: 6px; width: 90%;">
-			<div class="progress-bar" role="progressbar" style="width: {{100 * (maxTests - passages.length) / maxTests}}%;">
-			</div>
-		</div>
 	</nav>
 	<div class="container">
 		<div id="view" ng-view></div>
@@ -24,6 +20,8 @@
 	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 	<script src="vendor/js//bootstrap.min.js"></script>
 	<script src="vendor/js/angular.min.js"></script>
+	<script src='https://cdn.firebase.com/v0/firebase.js'></script>
+	<script src='https://cdn.firebase.com/libs/angularfire/0.3.0/angularfire.min.js'></script>
 	<script src="app/js/app.js"></script>
 </body>
 </html>
